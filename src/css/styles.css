@@ -240,3 +240,78 @@ color: #444;
   width: 430px;
   height: 242px;
 }
+
+/*------------SECTION TESTIMONIALS---------------*/
+
+#testimonials {
+  width: 100%;
+  height: auto;
+  padding: 60px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonialBlock{
+  height: 105px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  height: 36px;
+  width: 36px;
+  padding: 150px;
+}
+
+.arrow img {
+  height: auto;
+  width: auto;
+  background-color: #fff;
+}
+
+.testimonialsText{
+  height: auto;
+  width: 596px;
+}
+
+.testimonialsText p {
+  font-size: 22px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.testimonialAuthor {
+  width: 100%;
+  height: 144px ;
+  padding:50px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.testimonialAuthor div img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.testimonialAuthor div span {
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  color: #aaa;
+}
+
+.testimonialAuthor div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

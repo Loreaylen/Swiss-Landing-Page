@@ -1,3 +1,7 @@
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Source Sans 3', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;*/
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +11,6 @@
 header {
   width: 100%;
   height: 60px;
-  border: 1px solid black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,12 +23,19 @@ header {
   justify-content: center;
 }
 
+#logo span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  color:#444;
+}
+
 #mainMenu {
   height: 60px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-right: 80px;
+  padding-right: 100px;
 }
 
 #mainMenu ul, #footerMenu ul {
@@ -36,8 +46,114 @@ header {
 #mainMenu .menuItems, #footerMenu .menuItems {
   list-style-type: none;
   width: 110px;
-  padding:15px;
-  border-left: 2px solid rgb(175, 171, 171);
+  padding:8px 10px;
+  border-right: 1px solid #e6e6e6;
+  font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
 }
 
+/*------------------SECTION ABOUT-----------------*/
+
+
+main {
+  width: 100%;
+  height: auto;
+}
+#about {
+  width: 100%;
+  height: auto;
+  padding: 0 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#about article {
+display: flex;
+flex-direction: column;
+
+}
+
+#aboutTextContainer {
+  width: 480px;
+  height: 200px;
+}
+
+.h1Container {
+  width: 480px;
+  height: 124px;
+  text-align: left;
+  padding-bottom:22px;
+}
+
+h1 {
+font-size: 40px;
+font-weight: bold;
+font-family: 'Source Sans 3', sans-serif; 
+color: #444;
+}
+
+.pContainer {
+  width: 347px;
+  height: 76px;
+  text-align: left;
+}
+
+.pContainer p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  color: #7a7a7a;
+
+}
+
+#aboutButtons {
+  width: 310px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#aboutButtons button {
+  width: 148px;
+  height: 42px;
+  margin-right: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  border: 2px solid #444444;
+  padding: 0 10px;
+  border-radius: 20px;
+  line-height: 1;
+}
+
+#getStarted {
+  background-color: #444;
+  color:#fff;
+}
+
+#learnMore {
+  background-color: #fff;
+  color:#444;
+}
+
+.iphoneContainer {
+  width: 300px;
+  height: 381px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#iphoneImg{
+  width: auto;
+  height: auto;
+}
+
+.doggieContainer {
+  width: 279px;
+  height: auto;
+  position:absolute;
+  overflow: hidden;
+  left:61px;
+  top:113px;
+}

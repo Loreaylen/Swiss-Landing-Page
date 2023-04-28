@@ -15,14 +15,16 @@
     <div id="logo">
       <span>@ Your Company</span>
     </div>
-
+    <div class="hamburger-menu">
+      <div class="hamburger"></div>
+    </div>
     <nav id="mainMenu">
       <ul>
-        <li class="menuItems">Features</li>
-        <li class="menuItems">About</li>
-        <li class="menuItems">Testimonials</li>
-        <li class="menuItems">Download</li>
-        <li class="menuItems">Contact</li>
+        <li class="menuItems"><a href="#featureSection">Features</a></li>
+        <li class="menuItems"><a href="#about">About</a></li>
+        <li class="menuItems"><a href="#testimonials">Testimonials</a></li>
+        <li class="menuItems"><a href="#download">Download</a></li>
+        <li class="menuItems"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -44,11 +46,9 @@
       </article>
       <div class="iphoneContainer">
         <img id="iphoneImg" src="./assets/cel.svg" alt="iphone">
-        <!-- <div class="doggieContainer">
-          <img id='dogImg' src="../src/assets/jack-russell-gffdd6704f_640.jpg" alt="Doggie">
-        </div> -->
-      </div>
+      </div> 
     </section>
+    <div class="stroke"></div>
     <section id="featureSection">
       <article class="featureList">
         <div class="features">
@@ -76,9 +76,10 @@
         <div class="benefitsImg"><img src="./assets/random-bg.svg" alt="image"></div>
       </article>
     </section>
-    <section id="testimonials">
+    <div class="stroke"></div>
+   <section id="testimonials">
       <article class="testimonialBlock">
-        <div class="arrow"><img src="./assets/previous.svg" alt="previous"></div>
+        <div class="arrow arrowLeft"><img src="./assets/previous.svg" alt="previous"></div>
         <div class="testimonialsText">
           <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id."
           </p>
@@ -91,7 +92,7 @@
           <span>John Doe, CTO of Client Company</span>
         </div>
       </article>
-    </section>
+    </section> 
     <div class="stroke"></div>
     <section id="contact">
       <article class="contactText">
@@ -107,22 +108,46 @@
         </form>
       </article>
     </section>
-    <section id="download"></section>
+    <div class="stroke"></div>
+    <section id="download">
+      <div class="downloadText">
+        <h2>Download the mobile app for free</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis ac blandit elit tincidunt id</p>
+      </div>
+      <div class="downloadButtons">
+        <a href="#" id="appStoreBtn">
+          <i class="fa-brands fa-apple btnIcon" style="color: #ffffff;"></i>
+          <div>
+            <span class="firstText">Download on the</span>
+            <span class="appName">App Store</span>
+          </div>
+        </a>
+        <a href="#" id="googlePlayBtn">
+          <i class="fa-brands fa-google-play btnIcon" style="color: #ffffff;"></i>
+          <div>
+            <span class="firstText">GET IT ON</span>
+            <span class="appName">Google Play</span>
+          </div>
+        </a>
+      </div>
+    </section>
   </main>
   <footer>
     <nav id="footerMenu">
       <ul>
-        <li class="menuItems">Features</li>
-        <li class="menuItems">About</li>
-        <li class="menuItems">Testimonials</li>
-        <li class="menuItems">Download</li>
-        <li class="menuItems">Contact</li>
+        <li class="menuItems"><a href="#featureSection">Features</a></li>
+        <li class="menuItems"><a href="#about">About</a></li>
+        <li class="menuItems"><a href="#testimonials">Testimonials</a></li>
+        <li class="menuItems"><a href="#download">Download</a></li>
+        <li class="menuItems"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <div class="stroke tinyStroke"></div>
     <div id="companyInfo">
       <span>1717 Harrison St, San Francisco, CA 94103, USA</span>
       <span>© 2022 Your Company.  All rights reserved.</span>
     </div>
-  </footer>
+  </footer> 
+  <script src="https://kit.fontawesome.com/7ef4900e92.js" crossorigin="anonymous"></script>
 </body>
 </html>

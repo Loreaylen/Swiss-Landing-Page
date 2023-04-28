@@ -42,19 +42,27 @@ header {
   align-items: flex-end;
 }
 
-#mainMenu .menuItems, #footerMenu .menuItems {
+.menuItems {
   list-style-type: none;
-  width: 110px;
-  padding:8px 10px;
+  width: 129px;
+  height: 36px;
+  margin: 12px 0;
   border-right: 1px solid var(--stroke-color);
   font-family: var(--main-font);
+  display: flex;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .stroke {
   width: 100%;
   height: 1px;
   border: 0.5px solid var(--stroke-color);
+}
+
+.tinyStroke {
+  width: 56px;
 }
 
 /*------------------SECTION ABOUT-----------------*/
@@ -66,8 +74,7 @@ main {
 }
 #about {
   width: 100%;
-  height: auto;
-  padding: 0 36px;
+  height: 480px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -142,8 +149,9 @@ color: var(--primary-color);
 }
 
 .iphoneContainer {
-  width: 300px;
-  height: 381px;
+  margin-top:24px; 
+  max-width: 359px;
+  height: 457px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -196,6 +204,7 @@ color: var(--primary-color);
   font-size: var(--body-size);
   text-align: left;
   font-weight: 400;
+  margin-top: 25px;
 }
 
 .benefitsImg {
@@ -212,6 +221,8 @@ color: var(--primary-color);
 #featureSection {
   display: flex;
   flex-direction: column;
+  height: 770px;
+  width: 100%;
 }
 
 .featureList {
@@ -235,8 +246,7 @@ color: var(--primary-color);
 .benefits {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  padding: 100px;
+  margin-top: 50px;
 }
 
 .benefitsText{
@@ -250,7 +260,7 @@ color: var(--primary-color);
 
 #testimonials {
   width: 100%;
-  height: auto;
+  height: 382px;
   padding: 60px 100px;
   display: flex;
   flex-direction: column;
@@ -269,7 +279,6 @@ color: var(--primary-color);
 .arrow {
   height: 36px;
   width: 36px;
-  padding: 150px;
 }
 
 .arrow img {
@@ -281,13 +290,15 @@ color: var(--primary-color);
 .testimonialsText{
   height: auto;
   width: 596px;
+  text-align: center;
 }
 
 .testimonialsText p {
   font-size: var(--testimony-size);
   font-family: var(--main-font);
   font-weight: 400;
-  text-align: center;
+  margin:auto;
+  max-width: 400px;
 }
 
 .testimonialAuthor {
@@ -359,7 +370,7 @@ color: var(--primary-color);
 }
 
 .contactForm {
-  width: 920px;
+  width: 100%;
   height: 60px;
   display: flex;
   justify-content: space-around;
@@ -395,5 +406,309 @@ color: var(--primary-color);
   font-size: var(--input-size);
   font-weight: 500;
   border: none;
+}
+
+/*------------SECTION DOWNLOAD --------------*/
+
+#download {
+  width: 100%;
+  height: 302px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.downloadText {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.downloadText h2 {
+  font-size: var(--subheading-size);
+  font-family: var(--main-font);
+  font-weight: bolder;
+  color: var(--primary-color)
+}
+
+.downloadText p {
+  font-family: var(--main-font);
+  font-size: var(--body-size);
+  color: var(--secondary-color);
+  opacity: 0.8;
+  display: inline-block;
+  height: 47px;
+  width: 596px;
+}
+
+.downloadButtons a{
+  display: inline-block;
+  height: 42px;
+  width: 139px;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+}
+
+/*-------------FOOTER -----------------*/
+
+footer {
+  height: 281px;
+  padding:56px;
+  background-color: var(--footer-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#footerMenu {
+  width: 645px;
+  height: 42px;
+}
+
+#footerMenu .menuItems {
+  height: 26px;
+  width: 128px;
+}
+
+#companyInfo {
+  display: flex;
+  height: 67px;
+  width: 372px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#companyInfo span {
+  color: var(--testimony-color);
+  font-family: var(--main-font);
+  font-size: var(--about-size);
+}
+.hamburger-menu {
+  display: none;
+}
+.hamburger {
+  display: block;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburger:before, .hamburger:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #333;
+  position: absolute;
+  left: 0;
+}
+
+.hamburger:before {
+  top: -8px;
+}
+
+.hamburger:after {
+  bottom: -8px;
+}
+
+
+@media screen and (max-width:895px) {
+#contact {
+  flex-direction: column;
+}
+.contactText{
+  width: 100%;
+  padding: 10px;
+}
+.contactForm{
+  height: auto;
+}
+.contactText p{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contactForm form{
+  display: flex;
+  flex-direction: column;
+}
+#about {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+#featureSection {
+  height: auto;
+}
+.featureList{
+  flex-direction: column;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.pContainer {
+  width: 100%;
+  text-align: center;
+}
+
+#aboutButtons {
+  width: 100%;
+  justify-content: center;
+}
+.h1Container {
+  text-align: center;
+}
+.benefits {
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-bottom: 10px;
+}
+#testimonials {
+  padding:0;
+  position:relative;
+}
+.testimonialsText {
+  width: 100%;
+}
+.testimonialBlock{
+  align-items: start;
+}
+
+.testimonialsText p {
+  max-width: 275px;
+  margin-top: 40px;
+}
+
+.arrow {
+  position:absolute;
+  top: 50%;
+ right: 10%;
+}
+.arrowLeft {
+  right: 0;
+  left: 10%;
+}
+}
+
+@media screen and (max-width:490px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  #mainMenu {
+    display: none;
+  }
+
+  .hamburger-menu .hamburger {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .hamburger-menu .hamburger:before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .hamburger-menu .hamburger:after {
+    bottom: 0;
+    transform: rotate(-45deg);
+  }
+
+  .hamburger-menu .hamburger:before,
+  .hamburger-menu .hamburger:after {
+    width: 20px;
+  }
+
+  .hamburger-menu.open #mainMenu {
+    display: block;
+  }
+  .iphoneContainer{
+    width: 300px;
+  }
+  #iphoneImg{
+    width: 100%;
+  }
+  #aboutTextContainer{
+    width: 100%;
+  }
+  .h1Container{
+    width: 100%;
+  }
+.h1Container h1 {
+  font-size: var(--testimony-size-large);
+}
+.benefitsImg{
+  width: 300px;
+}
+.benefitsImg img{
+  width: 100%;
+  height: 100%;
+}
+  .arrow {
+   right: 5%;
+   height: 35px;
+   width: 35px;
+  }
+  .arrow img {
+    height: 35px;
+    width: 35px;
+   }
+  .arrowLeft {
+    left: 5%;
+  }
+  .testimonialsText p{
+    margin-top: 52px;
+font-size: 18px;
+  }
+  .benefitsText{
+    width: 100%;
+    padding: 10px;
+    height: auto;
+  }
+
+  #download{
+    align-items: center;
+padding-bottom: 30px;
+
+  }
+
+  .downloadText p {
+    height: auto;
+    width: 100%;
+  }
+  .downloadText{
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+
+  }
+
+  footer {
+    height: auto;
+    padding:0;
+  }
+  #footerMenu {
+    width: 100%;
+    height: auto;
+  }
+  #footerMenu ul {
+flex-direction: column;
+  }
+
+  #footerMenu .menuItems {
+    width: 100%;
+  }
+
+  #companyInfo {
+    width: 100%;
+  }
 
 }

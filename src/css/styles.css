@@ -34,7 +34,8 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-right: 100px;
+  position:relative;
+
 }
 
 #mainMenu ul, #footerMenu ul {
@@ -53,6 +54,15 @@ header {
   text-align: center;
   align-items: center;
   justify-content: center;
+}
+
+.menuItems:last-child {
+  border:none;
+}
+
+.menuItems a {
+  text-decoration: none;
+  color: var(--primary-color)
 }
 
 .stroke {
@@ -489,37 +499,35 @@ footer {
   font-family: var(--main-font);
   font-size: var(--about-size);
 }
-.hamburger-menu {
-  display: none;
-}
-.hamburger {
-  display: block;
-  width: 30px;
-  height: 20px;
-  position: relative;
-  cursor: pointer;
-}
-
-.hamburger:before, .hamburger:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: #333;
-  position: absolute;
-  left: 0;
-}
-
-.hamburger:before {
-  top: -8px;
-}
-
-.hamburger:after {
-  bottom: -8px;
-}
 
 
 @media screen and (max-width:895px) {
+ header {
+  flex-direction: column;
+  height: auto;
+  margin-bottom: 30px;
+ } 
+
+ #logo {
+  height: 50px;
+ }
+#mainMenu {
+  width: 100%;
+  height: 300px;
+  margin: 0;
+}
+
+ #mainMenu ul {
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--footer-color);
+ } 
+
+ #mainMenu .menuItems {
+  width: 100%;
+  border: none;
+ }
+
 #contact {
   flex-direction: column;
 }
@@ -537,6 +545,7 @@ footer {
 .contactForm form{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 #about {
   flex-direction: column;
@@ -598,38 +607,14 @@ margin-bottom: 10px;
 }
 
 @media screen and (max-width:490px) {
-  .hamburger-menu {
-    display: block;
+  
+  .features {
+    width: 230px;
   }
-
-  #mainMenu {
-    display: none;
+  .pContainer p {
+    font-size: var(--body-size);
   }
-
-  .hamburger-menu .hamburger {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-
-  .hamburger-menu .hamburger:before {
-    top: 0;
-    transform: rotate(45deg);
-  }
-
-  .hamburger-menu .hamburger:after {
-    bottom: 0;
-    transform: rotate(-45deg);
-  }
-
-  .hamburger-menu .hamburger:before,
-  .hamburger-menu .hamburger:after {
-    width: 20px;
-  }
-
-  .hamburger-menu.open #mainMenu {
-    display: block;
-  }
+ 
   .iphoneContainer{
     width: 300px;
   }
@@ -666,7 +651,7 @@ margin-bottom: 10px;
   }
   .testimonialsText p{
     margin-top: 52px;
-font-size: 18px;
+    font-size: 18px;
   }
   .benefitsText{
     width: 100%;
@@ -674,9 +659,18 @@ font-size: 18px;
     height: auto;
   }
 
+  .benefitsText h2, .contactText h2, .downloadText h2 {
+    font-size: var(--testimony-size-large);
+    text-align: center;
+  }
+
+  .benefitsText p {
+    text-align: center;
+  }
+
   #download{
     align-items: center;
-padding-bottom: 30px;
+    padding-bottom: 30px;
 
   }
 
@@ -688,12 +682,13 @@ padding-bottom: 30px;
     height: 100%;
     justify-content: center;
     text-align: center;
+    padding:10px;
 
   }
 
   footer {
     height: auto;
-    padding:0;
+    padding: 0 0 30px 0;
   }
   #footerMenu {
     width: 100%;
@@ -702,6 +697,8 @@ padding-bottom: 30px;
   #footerMenu ul {
 flex-direction: column;
   }
+
+  
 
   #footerMenu .menuItems {
     width: 100%;

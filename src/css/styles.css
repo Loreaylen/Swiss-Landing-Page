@@ -1,6 +1,5 @@
-/*font-family: 'Montserrat', sans-serif;
-font-family: 'Source Sans 3', sans-serif;
-font-family: 'Source Sans Pro', sans-serif;*/
+
+@import '../css/root.css';
 
 * {
   margin: 0;
@@ -24,10 +23,10 @@ header {
 }
 
 #logo span {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--logo-font);
   font-weight: bold;
-  font-size: 22px;
-  color:#444;
+  font-size: var(--logo-font);
+  color: var(--primary-color);
 }
 
 #mainMenu {
@@ -47,8 +46,8 @@ header {
   list-style-type: none;
   width: 110px;
   padding:8px 10px;
-  border-right: 1px solid #e6e6e6;
-  font-family: 'Source Sans Pro', sans-serif;
+  border-right: 1px solid var(--stroke-color);
+  font-family: var(--main-font);
   text-align: center;
 }
 
@@ -87,10 +86,10 @@ flex-direction: column;
 }
 
 h1 {
-font-size: 40px;
+font-size: var(--heading-size);
 font-weight: bold;
-font-family: 'Source Sans 3', sans-serif; 
-color: #444;
+font-family: var(--secondary-font); 
+color: var(--primary-color);
 }
 
 .pContainer {
@@ -100,9 +99,9 @@ color: #444;
 }
 
 .pContainer p {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
-  color: #7a7a7a;
+  font-family: var(--main-font);
+  font-size: var(--about-size);
+  color: var(--about-color)
 
 }
 
@@ -117,23 +116,23 @@ color: #444;
   width: 148px;
   height: 42px;
   margin-right: 14px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: var(--main-font);
   font-weight: 600;
-  font-size: 16px;
-  border: 2px solid #444444;
+  font-size: var(--about-size);
+  border: 2px solid var(--primary-color);
   padding: 0 10px;
   border-radius: 20px;
   line-height: 1;
 }
 
 #getStarted {
-  background-color: #444;
-  color:#fff;
+  background-color: var(--primary-color);
+  color: var(--light-color);
 }
 
 #learnMore {
-  background-color: #fff;
-  color:#444;
+  background-color: var(--light-color);
+  color: var(--primary-color);
 }
 
 .iphoneContainer {
@@ -159,36 +158,36 @@ color: #444;
 }
 
 .featureTitle {
-  color:#606060;
-  font-family: 'Source Sans Pro', sans-serif;
+  color:var(--secondary-color);
+  font-family: var(--main-font);
   font-weight: 500;
-  font-size: 21px;
+  font-size: var(--feature-heading-size);
   padding: 10px 0;
 }
 
 .featureText {
-  color:#606060;
-  font-family: 'Source Sans Pro', sans-serif;
+  color: var(--secondary-color);
+  font-family: var(--main-font);
   font-weight: 400;
-  font-size: 14px;
+  font-size: var(--body-size);
   text-align: center;
   padding:10px 0;
 }
 
 .benefitsText {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: var(--main-font);
 }
 
 .benefitsText h2 {
-  color: #444;
-  font-size: 36px;
+  color: var(--primary-color);
+  font-size: var(--subheading-size);
   text-align: left;
   font-weight: 500;
 }
 
 .benefitsText p {
-  color:#606060;
-  font-size: 14px;
+  color:var(--secondary-color);
+  font-size: var(--body-size);
   text-align: left;
   font-weight: 400;
 }
@@ -270,7 +269,7 @@ color: #444;
 .arrow img {
   height: auto;
   width: auto;
-  background-color: #fff;
+  background-color: var(--light-color);
 }
 
 .testimonialsText{
@@ -279,8 +278,8 @@ color: #444;
 }
 
 .testimonialsText p {
-  font-size: 22px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-size: var(--testimony-size);
+  font-family: var(--main-font);
   font-weight: 400;
   text-align: center;
 }
@@ -303,10 +302,10 @@ color: #444;
 }
 
 .testimonialAuthor div span {
-  font-size: 14px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-size: var(--body-size);
+  font-family: var(--main-font);
   text-align: center;
-  color: #aaa;
+  color: var(--testimony-color);
 }
 
 .testimonialAuthor div {

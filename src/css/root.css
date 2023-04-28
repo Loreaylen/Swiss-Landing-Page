@@ -1,0 +1,22 @@
+:root {
+  --main-font: 'Source Sans Pro', sans-serif;
+  --secondary-font: 'Source Sans 3', sans-serif;
+  --logo-font: 'Montserrat', sans-serif;
+  
+  --heading-size: 40px;
+  --subheading-size:36px;
+  --testimony-size: 22px;
+  --feature-heading-size:21px;
+  --about-size:16px;
+  --body-size:14px;
+  
+  --primary-color: #444;
+  --secondary-color: #606060;
+  --testimony-color:#aaa;
+  --stroke-color: #ebebeb;
+  --input-color:#c0c0c0;
+  --dark-color: #000;
+  --light-color:#fff;
+  --footer-color:#f7f6f6;
+  --about-color:#7a7a7a;
+  }

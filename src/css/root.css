@@ -7,6 +7,7 @@
   --subheading-size:36px;
   --testimony-size: 22px;
   --feature-heading-size:21px;
+  --input-size: 18px;
   --about-size:16px;
   --body-size:14px;
   
@@ -19,4 +20,5 @@
   --light-color:#fff;
   --footer-color:#f7f6f6;
   --about-color:#7a7a7a;
+  --input-border-color:#d6d6d6;
   }

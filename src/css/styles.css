@@ -303,6 +303,16 @@ color: var(--primary-color);
   text-align: center;
 }
 
+.testimonialAuthor div{
+  border-top: 2px solid var(--stroke-color);
+}
+
+.testimonialAuthor span {
+  font-family: var(--main-font);
+  font-size: var(--body-size);
+  color: var(--testimony-color)
+}
+
 .testimonialsText p {
   font-size: var(--testimony-size);
   font-family: var(--main-font);
@@ -325,7 +335,7 @@ color: var(--primary-color);
   height: 48px;
   width: 48px;
   border-radius: 50%;
-  padding: 10px;
+  margin: 20px;
 }
 
 .testimonialAuthor div span {
@@ -340,6 +350,7 @@ color: var(--primary-color);
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 50px;
 }
 
 /*---------------SECTION CONTACT-----------------*/
@@ -455,12 +466,47 @@ color: var(--primary-color);
   width: 596px;
 }
 
+.downloadButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .downloadButtons a{
-  display: inline-block;
+  margin: 10px;
+  padding: 8px;
+  display: flex;
   height: 42px;
   width: 139px;
   background-color: var(--primary-color);
   border-radius: 8px;
+  text-decoration: none;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.buttonText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnIcon {
+  height: 20px;
+  width: 20px;
+}
+.firstText {
+  font-size: 10px;
+  text-align: left;
+}
+.appName {
+  font-size: var(--input-size);
+}
+.buttonText span {
+  font-family: var(--main-font);
+  color: var(--light-color)
 }
 
 /*-------------FOOTER -----------------*/
@@ -547,12 +593,14 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+
 #about {
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: auto;
 }
+
 #featureSection {
   height: auto;
 }
@@ -645,6 +693,14 @@ footer {
 }
 
 @media screen and (max-width:490px) {
+
+  #aboutButtons {
+    justify-content: space-evenly;
+  }
+
+  #aboutButtons button {
+    margin: 0;
+  }
   
   .features {
     width: 230px;
